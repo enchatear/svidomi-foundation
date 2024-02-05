@@ -1,0 +1,18 @@
+@import url('../fonts/import.css');
+@import url('./reset.css');
+
+* {
+    font-family: 'e-UkraineHead', sans-serif;
+    word-break: break-word;
+    font-weight: 500;
+}
+
+body {
+    /*overflow-y: scroll;*/
+    background: #ffffff;
+}
+
+a {
+    color: #000;
+    text-decoration: none !important;
+}

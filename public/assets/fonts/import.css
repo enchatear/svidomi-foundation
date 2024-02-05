@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: local('e-Ukraine Head Bold'),
+    url('e-UkraineHead-Bold.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: local('e-Ukraine Head Regular'),
+    url('e-UkraineHead-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: local('e-Ukraine Head Medium'),
+    url('e-UkraineHead-Medium.otf') format('otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SansSerif';
+    src: local('e-Ukraine Head Thin'),
+    url('e-UkraineHead-Thin.otf') format('otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: local('e-Ukraine Head Light'),
+    url('e-UkraineHead-Light.otf') format('otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'e-UkraineHead';
+    src: local('e-Ukraine Head UltraLight'),
+    url('e-UkraineHead-UltraLight.otf') format('otf');
+    font-weight: 200;
+    font-style: normal;
+}
