@@ -16,6 +16,8 @@ i18next
       order: ["localStorage", "cookie"],
       caches: ["localStorage", "cookie"]
     },
-  }).then(t => {
-    document.querySelector('[data-i18n="hello"]').textContent = t('hello')
-});
+  })
+  .then(t => {
+    document.querySelector('[data-i18n="logoText"]').textContent = t('logoText');
+    document.querySelector('[data-i18n="phone"]').textContent = t('phone');
+  });

@@ -1,0 +1,76 @@
+@import "./defaults";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 84px;
+
+  &_container {
+    max-width: 1128px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    max-width: 314px;
+
+
+    & > h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+  }
+
+  &_right-block {
+    display: flex;
+    gap: 82px;
+  }
+
+  .language-selector {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    & > span {
+      font-size: 18px;
+      font-weight: 400;
+      color: #000;
+      transition: 200ms;
+      cursor: pointer;
+
+      &:hover {
+        color: $c-Accent;
+      }
+    }
+
+    .language-divider {
+      width: 1px;
+      height: 26px;
+      background: #000;
+    }
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+    &-icon_wrapper {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $c-Accent;
+    }
+  }
+}
