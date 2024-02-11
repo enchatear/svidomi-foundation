@@ -1,17 +1,36 @@
-import './src/styles/main.scss';
-import './src/styles/header.scss';
 import "./src/utils/i18n.js";
+import './src/styles/common.scss';
+import './src/styles/header.scss';
+import './src/styles/main.scss';
+import './src/styles/donation.scss';
+import './src/styles/information.scss';
+import './src/styles/about.scss';
+import './src/styles/video.scss'
 
-window.addEventListener('DOMContentLoaded', () => {
-  fetch('./src/components/header.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('content').insertAdjacentHTML('beforeend', html);
-    });
+window.addEventListener('DOMContentLoaded', async () => {
+  const content = document.getElementById('content');
 
-  // fetch('./src/components/footer.html')
-  //   .then(response => response.text())
-  //   .then(html => {
-  //     document.getElementById('content').insertAdjacentHTML('beforeend', html);
-  //   })
+  const htmlFiles = [
+    './src/components/header.html',
+    './src/components/main.html',
+    './src/components/donation.html',
+    './src/components/information.html',
+    './src/components/about.html',
+    './src/components/video.html',
+  ];
+
+  const fetchHtml = async (file) => {
+    const response = await fetch(file);
+    return await response.text();
+  };
+
+  const htmlContents = await Promise.all(htmlFiles.map(fetchHtml));
+
+  const htmlMap = Object.fromEntries(htmlFiles.map((file, index) => [file, htmlContents[index]]));
+
+  const sortedHtmlFiles = htmlFiles.sort((a, b) => htmlFiles.indexOf(a) - htmlFiles.indexOf(b));
+
+  sortedHtmlFiles.forEach(file => {
+    content.insertAdjacentHTML('beforeend', htmlMap[file]);
+  });
 });

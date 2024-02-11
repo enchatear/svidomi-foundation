@@ -18,6 +18,11 @@ i18next
     },
   })
   .then(t => {
-    document.querySelector('[data-i18n="logoText"]').textContent = t('logoText');
-    document.querySelector('[data-i18n="phone"]').textContent = t('phone');
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.dataset.i18n;
+      const translation = t(key);
+      if (translation) {
+        element.textContent = translation;
+      }
+    });
   });

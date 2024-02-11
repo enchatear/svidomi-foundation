@@ -1,0 +1,43 @@
+.video {
+  padding: 80px;
+  height: 805px;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background: linear-gradient(-98.27deg, #B0D4FF 0%, #5B9CD8 100%);
+
+  .play-button {
+    cursor: pointer;
+
+    &_out {
+      width: 216px;
+      height: 216px;
+      border-radius: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_in {
+      width: 144px;
+      height: 144px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      padding-left: 10px;
+    }
+  }
+
+  &_description {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}

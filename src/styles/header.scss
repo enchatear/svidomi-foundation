@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 84px;
+  min-height: 84px;
+  padding: 28px 0;
 
   &_container {
     max-width: 1128px;

@@ -1,0 +1,55 @@
+.about {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+
+  &_container {
+    max-width: 1140px;
+    width: 100%;
+
+    & > h3 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 40px;
+      margin-bottom: 34px;
+    }
+  }
+
+  &_cards_wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  &_card {
+    position: relative;
+    padding: 46px 24px 24px 160px;
+    overflow: hidden;
+    min-height: 205px;
+    height: 100%;
+
+    &_number {
+      position: absolute;
+      top: 44px;
+      left: 44px;
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      z-index: 2;
+    }
+
+    & > h4 {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    & > p {
+      font-size: 14px;
+      font-weight: 100;
+      text-align: center;
+    }
+  }
+}

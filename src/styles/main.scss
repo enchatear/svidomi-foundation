@@ -1,4 +1,101 @@
-.content {
-  height: 100%;
-  padding: 20px;
+.main {
+  border-radius: 30px;
+  min-height: 769px;
+  padding: 68px 24px 150px;
+  background: linear-gradient(-98.27deg, #B0D4FF 0%, #5B9CD8 100%);
+  position: relative;
+  overflow: hidden;
+
+  .red-drone {
+    position: absolute;
+    top: -106px;
+    left: 0;
+    animation: redDrone 800ms ease-out;
+  }
+
+  .black-drone {
+    position: absolute;
+    bottom: -208px;
+    right: -32px;
+    animation: blackDrone 1200ms ease-in-out;
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    & > h3 {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 100;
+    }
+
+    & > h2 {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 700;
+    }
+    
+    .foundation-name_wrapper {
+      position: relative;
+      margin-bottom: 86px;
+
+      & > h1 {
+        text-align: center;
+        font-size: 64px;
+        font-weight: 700;
+        position: relative;
+      }
+
+      .paint {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        z-index: 0;
+      }
+    }
+  }
+
+  &_buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+
+    .main_btn {
+      width: 360px;
+      font-size: 20px;
+
+      &__secondary {
+        background: #fff;
+      }
+    }
+  }
+
+  &_description {
+    width: 627px;
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+@keyframes redDrone {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes blackDrone {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
