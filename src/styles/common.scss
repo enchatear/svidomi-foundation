@@ -19,13 +19,17 @@
   transition: 200ms;
 
   &:hover {
-    font-weight: 700;
+
   }
 
   &__secondary {
     background: #fff;
     border: 2px solid #000;
   }
+}
+
+.container {
+  max-width: 1140px;
 }
 
 .card {
@@ -38,6 +42,13 @@
   position: absolute;
   bottom: -40px;
   left: -40px;
+}
+
+.blue-circle_left_bottom_sm {
+  position: absolute;
+  bottom: -93px;
+  left: -113px;
+  transform: scale(0.5);
 }
 
 .blue-circle_left_top_xs {
@@ -66,4 +77,34 @@
   top: -110px;
   right: -110px;
   transform: rotate(180deg) scale(0.5);
+}
+
+.scroll-btn {
+  width: 74px;
+  height: 74px;
+  border-radius: 100%;
+  background: $c-Accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  right: -100px;
+  bottom: 175px;
+  transition: right 300ms ease-out;
+  cursor: pointer;
+
+  &_active {
+    right: 94px;
+  }
+}
+
+@keyframes activateScrollBtn {
+  0% {
+    transform: translateX(150%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

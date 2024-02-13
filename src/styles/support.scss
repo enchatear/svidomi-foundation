@@ -1,0 +1,57 @@
+.support {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_container {
+    max-width: 1140px;
+    width: 100%;
+  }
+
+  &_card {
+    width: 100%;
+    padding: 52px 52px 76px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    .antenna {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+    }
+
+    .black-drone {
+      position: absolute;
+      top: -130px;
+      right: -84px;
+    }
+
+    &_content {
+      max-width: 670px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+
+      & > h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+      }
+    }
+
+    &_buttons {
+      margin-top: 26px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    &_btn {
+      max-width: 360px;
+      width: 100%;
+    }
+  }
+}

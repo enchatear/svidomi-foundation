@@ -7,11 +7,11 @@ i18next
   .use(Backend)
   .init({
     returnNull: false,
-    fallbackLng: 'ua',
+    fallbackLng: 'en',
     backend: {
       loadPath: "./assets/locales/{{lng}}.json"
     },
-    supportedLngs: ["ua", "en"],
+    supportedLngs: ["en", "ua"],
     detection: {
       order: ["localStorage", "cookie"],
       caches: ["localStorage", "cookie"]
@@ -26,3 +26,33 @@ i18next
       }
     });
   });
+
+document.getElementById('uaLang').addEventListener('click', () => {
+  console.log('changingLanguage...');
+  i18next.changeLanguage('ua').then(t => {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.dataset.i18n;
+      console.log('key', key);
+      const translation = t(key);
+      console.log('translation', translation);
+      if (translation) {
+        element.textContent = translation;
+      }
+    });
+  });
+})
+
+document.getElementById('enLang').addEventListener('click', () => {
+  console.log('changingLanguage...');
+  i18next.changeLanguage('en', (err, t) => {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.dataset.i18n;
+      console.log('key', key);
+      const translation = t(key);
+      console.log('translation', translation);
+      if (translation) {
+        element.textContent = translation;
+      }
+    })
+  });
+})
