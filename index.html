@@ -13,10 +13,258 @@
   </head>
   <body>
     <div id="content" class="content">
+      <header class="header">
+        <div class="header_container">
+          <div class="header_logo">
+            <object type="image/svg+xml" data="./assets/icons/logo.svg" width="53" height="47"></object>
+            <h2 data-i18n="logoText" class="header_logo_text"></h2>
+          </div>
+          <div class="header_right-block">
+            <div class="language-selector">
+                <span id="uaLang" role="button">
+                    UKR
+                </span>
+              <div class="language-divider"></div>
+              <span id="enLang" role="button">
+                    ENG
+                </span>
+            </div>
+            <div class="phone">
+              <div class="phone-icon_wrapper">
+                <object type="image/svg+xml" data="./assets/icons/phone.svg" width="18" height="18"></object>
+              </div>
+              <span data-i18n="phone" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="main">
+        <img src="./assets/img/red-drone.png" alt="red-drone" class="red-drone" />
+        <div class="main_content">
+          <h3 data-i18n="charityOrganization"></h3>
+          <h2 data-i18n="charityFoundation"></h2>
+          <div class="foundation-name_wrapper">
+            <img class="paint" src="./assets/img/paintAccent.png" alt="paint" />
+            <h1 data-i18n="svidomi"></h1>
+          </div>
+          <div class="main_buttons">
+            <button class="svidomi_btn main_btn" data-i18n="supportFund">
+            </button>
+            <button class="svidomi_btn main_btn main_btn__secondary" data-i18n="becomeFrontman">
+            </button>
+          </div>
+          <p class="main_description" data-i18n="mainDescription">
+          </p>
+        </div>
+        <img src="./assets/img/grey-drone.png" alt="grey-drone" class="black-drone" />
+      </section>
+      <section class="donation">
+        <div class="donation_container">
+          <div class="card collection-card">
+            <div class="collection-card_yellow-circle"></div>
+            <img class="blue-circle_left_bottom"
+                 src="./assets/img/blue-circles.png" alt="blue-circles"/>
+            <img class="blue-circle_right_top"
+                 src="./assets/img/blue-circles.png" alt="blue-circles"/>
+            <div class="collection-card_content">
+              <div class="collection-card_titles">
+                <h3 data-i18n="supportCollection"></h3>
+                <h3 data-i18n="collectionName"></h3>
+              </div>
+              <p data-i18n="collectionDescription"></p>
+              <div class="collection-card_buttons">
+                <button class="svidomi_btn collection-card_btn"
+                        data-i18n="otherBankDonation">
+                </button>
+                <button class="svidomi_btn collection-card_btn svidomi_btn__secondary collection-card_mono-btn">
+                  <img src="./assets/img/mono-logo.png" alt="mono logo"
+                       class="mono-logo"/>
+                  <span data-i18n="monoDonation"></span>
+                </button>
+              </div>
+            </div>
+            <img class="mono-cat" src="./assets/img/mono-cat.png"
+                 alt="mono cat"/>
+          </div>
+          <div class="donation_block">
+            <div class="donation_titles">
+              <h2 data-i18n="donation"></h2>
+              <span data-i18n="donationTip"></span>
+            </div>
+            <div class="donation_panel">
+              <div class="donation_variants">
+                <button class="svidomi_btn donation_btn"
+                        data-i18n="monobank"></button>
+                <button class="svidomi_btn svidomi_btn__secondary donation_btn"
+                        data-i18n="privat"></button>
+                <button class="svidomi_btn svidomi_btn__secondary donation_btn"
+                        data-i18n="liqpay"></button>
+              </div>
+              <div class="card donation_card">
+                <img src="./assets/img/blue-circles.png"
+                     class="blue-circle_right_top blue-circle_right_top_sm"
+                     alt="blue-circles"/>
+                <div class="donation_card_title">
+                  <button class="svidomi_btn donation_btn"
+                          data-i18n="otherBankDonation"></button>
+                  <div class="donation_pay-services">
+                    <img src="./assets/img/apple-pay.png"
+                         alt="apple pay" class="pay-img"/>
+                    <img src="./assets/img/google-pay.png"
+                         alt="apple pay" class="pay-img"/>
+                    <img src="./assets/img/card-pay.png" alt="apple pay"
+                         class="pay-img"/>
+                  </div>
+                </div>
+                <p class="donation_card_policy"
+                   data-i18n="donationCardPolicy"></p>
+                <p class="donation_card_warning"
+                   data-i18n="donationCardWarning"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="information">
+        <div class="information_content">
+          <h3 data-i18n="information_title"></h3>
+          <div class="information_block_wrapper">
+            <div class="information_block">
+              <div class="information_block_icon">
+                <object type="image/svg+xml" data="./assets/icons/intelligence.svg" width="72" height="72"></object>
+              </div>
+              <div class="information_block_text">
+                <h4 data-i18n="intelligence"></h4>
+                <h6 data-i18n="dronesWithThermalCameras"></h6>
+                <p data-i18n="intelligenceDescription"></p>
+              </div>
+            </div>
+            <div class="information_block">
+              <div class="information_block_icon">
+                <object type="image/svg+xml" data="./assets/icons/walkie-talkie.svg" width="100" height="100"></object>
+              </div>
+              <div class="information_block_text">
+                <h4 data-i18n="connection"></h4>
+                <h6 data-i18n="walkieTalkiesAndPhones"></h6>
+                <p data-i18n="connectionDescription"></p>
+              </div>
+            </div>
+            <div class="information_block">
+              <div class="information_block_icon">
+                <object type="image/svg+xml" data="./assets/icons/scope.svg" width="100" height="100"></object>
+              </div>
+              <div class="information_block_text">
+                <h4 data-i18n="optics"></h4>
+                <h6 data-i18n="thermalImagers"></h6>
+                <p data-i18n="opticsDescription"></p>
+              </div>
+            </div>
+            <div class="information_block">
+              <div class="information_block_icon">
+                <object type="image/svg+xml" data="./assets/icons/tablet.svg" width="100" height="100"></object>
+              </div>
+              <div class="information_block_text">
+                <h4 data-i18n="fireAdjustment"></h4>
+                <h6 data-i18n="dronesWithThermalCameras"></h6>
+                <p data-i18n="intelligenceDescription"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/img/starlink.png" alt="starlink" class="starlink-img" />
+      </section>
+      <section class="about">
+        <div class="about_container">
+          <h3 data-i18n="aboutWhyTitle"></h3>
+          <div class="about_cards_wrapper">
+            <div class="card about_card">
+              <span class="about_card_number">01</span>
+              <img class="blue-circle_left_top_sm" src="./assets/img/blue-circles.png" alt="blue-circles"/>
+              <h4 data-i18n="finsectorStrength"></h4>
+              <p data-i18n="finsectorStrengthDescription"></p>
+            </div>
+            <div class="card about_card">
+              <span class="about_card_number">02</span>
+              <img class="blue-circle_left_top_sm" src="./assets/img/blue-circles.png" alt="blue-circles"/>
+              <h4 data-i18n="projectApproach"></h4>
+              <p data-i18n="projectApproachDescription"></p>
+            </div>
+            <div class="card about_card">
+              <span class="about_card_number">03</span>
+              <img class="blue-circle_left_top_sm" src="./assets/img/blue-circles.png" alt="blue-circles"/>
+              <h4 data-i18n="focus"></h4>
+              <p data-i18n="focusDescription"></p>
+            </div>
+            <div class="card about_card">
+              <span class="about_card_number">04</span>
+              <img class="blue-circle_left_top_sm" src="./assets/img/blue-circles.png" alt="blue-circles"/>
+              <h4 data-i18n="allTransparent"></h4>
+              <p data-i18n="allTransparentDescription"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <a class="play-button_out" href="https://youtube.com" target="_blank">
+          <div class="play-button_in">
+            <img src="./assets/icons/play.svg" alt="play"/>
+          </div>
+        </a>
+        <h3 class="video_description" data-i18n="videoDescription"></h3>
+      </section>
+      <section class="support">
+        <div class="support_container">
+          <div class="card support_card">
+            <img class="blue-circle_left_bottom" src="./assets/img/blue-circles.png" alt="blue-circles"/>
+            <img class="antenna" src="./assets/img/antenna.png" alt="antenna" />
+            <div class="support_card_content">
+              <h3 data-i18n="rearTitle"></h3>
+              <h3 data-i18n="rearDescription"></h3>
+              <div class="support_card_buttons">
+                <button class="svidomi_btn support_card_btn" data-i18n="supportFront"></button>
+                <button class="svidomi_btn svidomi_btn__secondary support_card_btn" data-i18n="becomeFrontman"></button>
+              </div>
+            </div>
+            <img class="blue-circle_right_top" src="./assets/img/blue-circles.png" alt="blue-circles"/>
+            <img class="black-drone" src="./assets/img/black-drone.png" alt="black drone" />
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer_panel">
+            <div class="footer_logo">
+              <img src="./assets/img/logo-white.png" alt="white logo" />
+              <h2 data-i18n="logoText" class="footer_logo_text"></h2>
+            </div>
+            <div class="footer_menu">
+              <a href="#" class="footer_link" data-i18n="forZSURequests"></a>
+              <a href="#" class="footer_link" data-i18n="forAllRequests"></a>
+              <div class="footer_email_wrapper">
+                <img src="./assets/icons/mail.svg" alt="email" />
+                <a href="#" class="footer_link" data-i18n="email"></a>
+              </div>
+              <div class="footer_social_buttons">
+                <a href="https://instagram.com" target="_blank" class="social_btn">
+                  <img src="./assets/icons/instagram.svg" alt="instagram" />
+                </a>
+                <a href="https://facebook.com" target="_blank" class="social_btn">
+                  <img src="./assets/icons/facebook.svg" alt="facebook" />
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social_btn">
+                  <img src="./assets/icons/telegram.svg" alt="telegram" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr/>
+          <span data-i18n="allRightReserved" class="rights"></span>
+        </div>
+      </footer>
       <div id="scrollToTop" class="scroll-btn">
         <img src="./assets/icons/arrow-up.svg" alt="arrow" />
       </div>
+      <script type="module" src="/src/index.js"></script>
     </div>
-    <script type="module" src="/main.js"></script>
   </body>
 </html>

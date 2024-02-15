@@ -27,7 +27,7 @@ i18next
     });
   });
 
-document.getElementById('uaLang').addEventListener('click', () => {
+document.getElementById('uaLang')?.addEventListener('click', () => {
   console.log('changingLanguage...');
   i18next.changeLanguage('ua').then(t => {
     document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -42,7 +42,7 @@ document.getElementById('uaLang').addEventListener('click', () => {
   });
 })
 
-document.getElementById('enLang').addEventListener('click', () => {
+document.getElementById('enLang')?.addEventListener('click', () => {
   console.log('changingLanguage...');
   i18next.changeLanguage('en', (err, t) => {
     document.querySelectorAll('[data-i18n]').forEach(element => {
