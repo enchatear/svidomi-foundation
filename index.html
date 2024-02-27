@@ -14,20 +14,17 @@
   <body>
     <div id="content" class="content">
       <header class="header">
-        <div class="header_container">
-          <div class="header_logo">
-            <object type="image/svg+xml" data="./assets/icons/logo.svg" width="53" height="47"></object>
-            <h2 data-i18n="logoText" class="header_logo_text"></h2>
-          </div>
+        <div class="container header_container">
+          <div class="header_logo" id="headerLogoSvg"></div>
           <div class="header_right-block">
             <div class="language-selector">
-                <span id="uaLang" role="button">
-                    UKR
-                </span>
+              <span id="uaLang" role="button">
+                  UKR
+              </span>
               <div class="language-divider"></div>
               <span id="enLang" role="button">
-                    ENG
-                </span>
+                  ENG
+              </span>
             </div>
             <div class="phone">
               <div class="phone-icon_wrapper">
@@ -50,16 +47,16 @@
           <div class="main_buttons">
             <button class="svidomi_btn main_btn" data-i18n="supportFund">
             </button>
-            <button class="svidomi_btn main_btn main_btn__secondary" data-i18n="becomeFrontman">
-            </button>
+<!--            <button class="svidomi_btn main_btn main_btn__secondary" data-i18n="becomeFrontman">-->
+<!--            </button>-->
           </div>
           <p class="main_description" data-i18n="mainDescription">
           </p>
         </div>
-        <img src="./assets/img/grey-drone.png" alt="grey-drone" class="black-drone" />
+        <img src="./assets/img/grey-drone.png" alt="grey-drone" class="grey-drone" />
       </section>
       <section class="donation">
-        <div class="donation_container">
+        <div class="container donation_container">
           <div class="card collection-card">
             <div class="collection-card_yellow-circle"></div>
             <img class="blue-circle_left_bottom"
@@ -69,7 +66,7 @@
             <div class="collection-card_content">
               <div class="collection-card_titles">
                 <h3 data-i18n="supportCollection"></h3>
-                <h3 data-i18n="collectionName"></h3>
+<!--                <h3 data-i18n="collectionName"></h3>-->
               </div>
               <p data-i18n="collectionDescription"></p>
               <div class="collection-card_buttons">
@@ -105,7 +102,7 @@
                      class="blue-circle_right_top blue-circle_right_top_sm"
                      alt="blue-circles"/>
                 <div class="donation_card_title">
-                  <button class="svidomi_btn donation_btn"
+                  <button class="svidomi_btn donation_card_btn"
                           data-i18n="otherBankDonation"></button>
                   <div class="donation_pay-services">
                     <img src="./assets/img/apple-pay.png"
@@ -135,7 +132,7 @@
               </div>
               <div class="information_block_text">
                 <h4 data-i18n="intelligence"></h4>
-                <h6 data-i18n="dronesWithThermalCameras"></h6>
+<!--                <h6 data-i18n="dronesWithThermalCameras"></h6>-->
                 <p data-i18n="intelligenceDescription"></p>
               </div>
             </div>
@@ -145,7 +142,7 @@
               </div>
               <div class="information_block_text">
                 <h4 data-i18n="connection"></h4>
-                <h6 data-i18n="walkieTalkiesAndPhones"></h6>
+<!--                <h6 data-i18n="walkieTalkiesAndPhones"></h6>-->
                 <p data-i18n="connectionDescription"></p>
               </div>
             </div>
@@ -155,7 +152,7 @@
               </div>
               <div class="information_block_text">
                 <h4 data-i18n="optics"></h4>
-                <h6 data-i18n="thermalImagers"></h6>
+<!--                <h6 data-i18n="thermalImagers"></h6>-->
                 <p data-i18n="opticsDescription"></p>
               </div>
             </div>
@@ -165,7 +162,7 @@
               </div>
               <div class="information_block_text">
                 <h4 data-i18n="fireAdjustment"></h4>
-                <h6 data-i18n="dronesWithThermalCameras"></h6>
+<!--                <h6 data-i18n="dronesWithThermalCameras"></h6>-->
                 <p data-i18n="intelligenceDescription"></p>
               </div>
             </div>
@@ -204,16 +201,125 @@
           </div>
         </div>
       </section>
-      <section class="video">
-        <a class="play-button_out" href="https://youtube.com" target="_blank">
-          <div class="play-button_in">
-            <img src="./assets/icons/play.svg" alt="play"/>
+<!--      <section class="video">-->
+<!--        <a class="play-button_out" href="https://youtube.com" target="_blank">-->
+<!--          <div class="play-button_in">-->
+<!--            <img src="./assets/icons/play.svg" alt="play"/>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--        <h3 class="video_description" data-i18n="videoDescription"></h3>-->
+<!--      </section>-->
+      <section class="social">
+        <h3 data-i18n="socialHead"></h3>
+        <div class="social_swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-01.png" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-02.png" alt="Image 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-03.png" alt="Image 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-03.png" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-03.png" alt="Image 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-02.png" alt="Image 3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-01.png" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-01.png" alt="Image 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/social/social-02.png" alt="Image 3">
+            </div>
           </div>
-        </a>
-        <h3 class="video_description" data-i18n="videoDescription"></h3>
+        </div>
+        <div class="social_wrapper">
+          <a href="https://instagram.com" target="_blank" class="social_item">
+            <img class="instagram" src="./assets/icons/instagram.svg" alt="instagram" />
+          </a>
+          <a href="https://facebook.com" target="_blank" class="social_item">
+            <img class="facebook" src="./assets/icons/facebook.svg" alt="facebook" />
+          </a>
+        </div>
       </section>
       <section class="support">
-        <div class="support_container">
+        <div class="container">
+          <div class="awards_wrapper">
+            <div class="awards_card">
+              <h3 data-i18n="ourAwards"></h3>
+              <p data-i18n="awardsDescription"></p>
+              <button class="svidomi_btn awards_btn" data-i18n="makeDonation"></button>
+            </div>
+            <div class="awards_card awards_card__blue">
+              <div class="swiper awards_swiper-container">
+<!--                <div class="swiper-button-prev">-->
+<!--                  <img src="./assets/icons/arrow-left.svg" alt="arrow-left" />-->
+<!--                </div>-->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-1.png" alt="Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-2.png" alt="Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-3.png" alt="Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-4.png" alt="Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-5.png" alt="Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-6.png" alt="Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-7.png" alt="Image 1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-8.png" alt="Image 2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-9.jpg" alt="Image 3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/awards/award-10.PNG" alt="Image 3">
+                  </div>
+                </div>
+                <div id="prev" class="swiper-button-prev">
+                  <img src="./assets/icons/arrow-left.svg" alt="arrow-left" />
+                </div>
+                <div id="next" class="swiper-button-next">
+                  <img src="./assets/icons/arrow-right.svg" alt="arrow-right" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="request_card">
+            <form class="request_form">
+              <h3 data-i18n="requestForHelp"></h3>
+              <p data-i18n="fillForm"></p>
+              <input type="text" class="request_input" data-i18n_placeholder="enterPIB" required />
+              <input type="email" class="request_input" data-i18n_placeholder="enterEmail" required />
+              <input type="tel" class="request_input" data-i18n_placeholder="enterTel" required />
+              <textarea class="request_textarea" data-i18n_placeholder="describeYourNeeds" ></textarea>
+              <p class="request_agreement" data-i18n="personalDataAgreement"></p>
+              <button class="svidomi_btn" data-i18n="send" type="submit"></button>
+            </form>
+            <div class="request-img-wrapper">
+              <img src="./assets/img/stand-with-ukraine.png" alt="stand with ukraine" />
+            </div>
+          </div>
           <div class="card support_card">
             <img class="blue-circle_left_bottom" src="./assets/img/blue-circles.png" alt="blue-circles"/>
             <img class="antenna" src="./assets/img/antenna.png" alt="antenna" />
@@ -233,10 +339,7 @@
       <footer class="footer">
         <div class="container">
           <div class="footer_panel">
-            <div class="footer_logo">
-              <img src="./assets/img/logo-white.png" alt="white logo" />
-              <h2 data-i18n="logoText" class="footer_logo_text"></h2>
-            </div>
+            <div id="footerLogoSvg"></div>
             <div class="footer_menu">
               <a href="#" class="footer_link" data-i18n="forZSURequests"></a>
               <a href="#" class="footer_link" data-i18n="forAllRequests"></a>

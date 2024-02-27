@@ -24,7 +24,7 @@
 
   &_card {
     position: relative;
-    padding: 46px 24px 24px 160px;
+    padding: 46px 24px 24px 186px;
     overflow: hidden;
     min-height: 205px;
     height: 100%;
@@ -43,12 +43,12 @@
       font-size: 24px;
       font-weight: 700;
       text-align: center;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
     }
 
     & > p {
       font-size: 14px;
-      font-weight: 100;
+      font-weight: 400;
       text-align: center;
     }
   }

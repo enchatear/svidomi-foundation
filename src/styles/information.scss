@@ -3,7 +3,7 @@
   border-radius: 30px;
   display: grid;
   gap: 16px;
-  padding: 60px 0 60px 60px;
+  padding: 76px 0 76px 64px;
   grid-template-columns: 2fr 1fr;
 
   &_content {
@@ -19,12 +19,13 @@
   &_block_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
+    grid-gap: 79px 16px;
   }
 
   &_block {
     display: flex;
     gap: 16px;
+    max-width: 550px;
 
     &_icon {
       width: 134px;
@@ -40,7 +41,7 @@
     &_text {
       display: flex;
       flex-direction: column;
-      padding-top: 30px;
+      //padding-top: 30px;
       gap: 8px;
 
       & > h4 {
@@ -54,8 +55,9 @@
       }
 
       & > p {
-        font-weight: 100;
+        font-weight: 400;
         font-size: 14px;
+        line-height: 22.4px;
       }
     }
   }

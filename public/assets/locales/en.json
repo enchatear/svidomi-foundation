@@ -43,9 +43,20 @@
   "rearTitle": "The rear is our front.",
   "rearDescription": "Keeping him until victory",
   "supportFront": "Support the front",
-  "becomeFrontman": "Become a frontman",
   "forZSURequests": "For requests from ZSU",
   "forAllRequests": "For general requests",
   "email": "bfsvidomi@gmail.com",
-  "allRightReserved": "Charitable Foundation Conscious 2024 All rights reserved"
+  "allRightReserved": "Charitable Foundation Conscious 2024 All rights reserved",
+  "socialHead": "WE ARE IN SOCIAL NETWORKS",
+  "ourAwards": "Our Honors",
+  "awardsDescription": "We are honored to receive awards from those whom we constantly help.\nYou also have the opportunity to see them.",
+  "makeDonation": "Make a donation",
+  "requestForHelp": "Request aid",
+  "fillForm": "Please complete the form below so we can process your request as soon as possible",
+  "enterPIB": "NAME",
+  "enterEmail": "EMAIL",
+  "enterTel": "PHONE NUMBER",
+  "describeYourNeeds": "REQUEST",
+  "personalDataAgreement": "You automatically give your consent to the processing of your personal data when you send a request.",
+  "send": "Send"
 }

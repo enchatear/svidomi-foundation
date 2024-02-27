@@ -1,0 +1,43 @@
+@import "./defaults";
+
+.social {
+  padding: 60px 64px;
+  max-height: 750px;
+  height: fit-content;
+  width: 100%;
+  border-radius: 30px;
+  background: linear-gradient(-98.27deg, #B0D4FF 0%, #5B9CD8 100%);
+  overflow: hidden;
+
+  & > h3 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  &_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 32px;
+  }
+
+  &_item {
+    background: $c-Accent;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+
+    .instagram {
+      width: 40px;
+    }
+
+    .facebook {
+      width: 24px;
+    }
+  }
+}
