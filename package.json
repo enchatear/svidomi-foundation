@@ -13,9 +13,11 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "i18next": "^23.8.2",
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-http-backend": "^2.4.3",
+    "scrollmagic": "^2.0.8",
     "swiper": "^11.0.6"
   }
 }

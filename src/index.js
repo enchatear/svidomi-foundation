@@ -13,4 +13,5 @@ import './styles/footer.scss';
 // * scripts
 import './scripts/scrollUp.js';
 import './scripts/swiper.js';
+import './scripts/animationOnScroll.js'
 import './utils/i18n.js';

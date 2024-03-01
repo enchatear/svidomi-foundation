@@ -24,7 +24,7 @@
 
   &_card {
     position: relative;
-    padding: 46px 24px 24px 186px;
+    padding: 58px 40px 58px 186px;
     overflow: hidden;
     min-height: 205px;
     height: 100%;
@@ -47,6 +47,9 @@
     }
 
     & > p {
+      display: flex;
+      height: 100%;
+      align-items: center ;
       font-size: 14px;
       font-weight: 400;
       text-align: center;

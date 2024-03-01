@@ -2,7 +2,7 @@
 
 .footer {
   background: linear-gradient(98.27deg, #B0D4FF 0%, #5B9CD8 100%);
-  padding: 54px 30px 20px;
+  padding: 54px 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 84px;
+    max-height: 88px;
+    height: 100%;
+    //gap: 84px;
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 88px;
+    }
+  }
+
+  &_menu {
+    height: 66px;
+    align-items: flex-start;
   }
 
   &_logo {
@@ -33,17 +48,34 @@
     }
   }
 
-  &_menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 48px;
-  }
+  //&_menu {
+  //  display: flex;
+  //  justify-content: space-between;
+  //  align-items: center;
+  //  gap: 48px;
+  //}
 
   &_link {
     font-weight: 300;
     font-size: 14px;
     color: #fff;
+    transition: border 200ms;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 2px; /* Товщина підкреслення */
+      background-color: #fff; /* Колір підкреслення */
+      transition: width 0.3s ease; /* Плавний перехід */
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 
   &_email_wrapper {
@@ -67,11 +99,21 @@
     }
   }
 
+  &_address {
+    align-items: flex-end;
+
+    & > span {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
   hr {
     height: 1px;
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
-    margin: 60px 0 16px;
+    margin: 16px 0;
     border: none;
     display: block;
   }

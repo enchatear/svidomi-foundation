@@ -46,6 +46,7 @@
 
 .container {
   max-width: 1140px;
+  width: 100%;
 }
 
 .card {
@@ -106,7 +107,7 @@
   position: fixed;
   z-index: 999;
   right: -100px;
-  bottom: 175px;
+  bottom: 195px;
   transition: right 300ms ease-out;
   cursor: pointer;
 

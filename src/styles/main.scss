@@ -51,7 +51,7 @@
     }
     
     .foundation-name_wrapper {
-      position: relative;
+      //position: relative;
       margin: 22px 0 86px;
 
       & > h1 {
@@ -63,9 +63,10 @@
 
       .paint {
         position: absolute;
-        top: -48px;
-        left: 0;
+        top: 109px;
+        left: calc(50% - 200px);
         z-index: 0;
+        min-width: 400px;
       }
     }
   }
@@ -73,7 +74,7 @@
   &_buttons {
     display: flex;
     gap: 30px;
-    margin-bottom: 44px;
+    margin-bottom: 50px;
     width: 100%;
 
     .main_btn {
@@ -87,10 +88,11 @@
   }
 
   &_description {
-    width: 627px;
-    font-size: 24px;
+    //width: 627px;
+    font-size: 40px;
     font-weight: 200;
     text-align: center;
+    font-family: 'e-UkraineHead'
   }
 }
 

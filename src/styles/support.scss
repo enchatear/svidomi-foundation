@@ -115,7 +115,7 @@
 
   &_card {
     width: 100%;
-    padding: 52px 52px 76px;
+    padding: 128px 52px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -134,7 +134,7 @@
     }
 
     &_content {
-      max-width: 670px;
+      max-width: 805px;
       width: 100%;
       position: relative;
       z-index: 1;
@@ -147,14 +147,14 @@
     }
 
     &_buttons {
-      margin-top: 26px;
+      margin-top: 50px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       gap: 30px;
     }
 
     &_btn {
-      max-width: 360px;
+      max-width: 430px;
       width: 100%;
     }
   }
