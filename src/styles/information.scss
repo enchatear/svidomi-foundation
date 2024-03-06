@@ -67,9 +67,16 @@
     margin: -65px 0;
   }
 
+  @media screen and (max-width: 1400px) {
+    grid-template-columns: 1fr;
+
+    .starlink-img {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 1023px) {
     padding: 40px 16px;
-    grid-template-columns: 1fr;
 
     .information_content {
       & > h3 {
@@ -91,18 +98,13 @@
           width: 54px;
         }
       }
-
-      &_wrapper {
-        grid-template-columns: 1fr;
-        grid-gap: 24px;
-      }
     }
+  }
 
-    .starlink-img {
-      margin: -39px 0 -103px -20px;
-      width: 350px;
-      max-width: 350px;
-      justify-self: center;
+  @media screen and (max-width: 767px) {
+    .information_block_wrapper {
+      grid-template-columns: 1fr;
+      grid-gap: 24px;
     }
   }
 }
