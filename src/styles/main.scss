@@ -9,11 +9,35 @@
   //align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 1290px) {
+    padding-top: 234px;
+    padding-bottom: 90px;
+  }
+
   .red-drone {
     position: absolute;
     top: -10px;
     left: 0;
     animation: redDrone 800ms ease-out;
+
+    @media screen and (max-width: 1556px) {
+      width: 500px !important;
+    }
+
+    @media screen and (max-width: 1440px) {
+      width: 400px !important;
+    }
+
+    @media screen and (max-width: 1290px) {
+      width: 300px !important;
+      top: -40px;
+      left: -30px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      width: 224px !important;
+      left: -20px;
+    }
   }
 
   .grey-drone {
@@ -24,6 +48,31 @@
     object-fit: contain;
     transform: rotate(20deg);
     animation: blackDrone 1200ms ease-in-out;
+
+    @media screen and (max-width: 11023px) {
+      width: 600px !important;
+    }
+
+    @media screen and (max-width: 1556px) {
+      width: 500px !important;
+    }
+
+    @media screen and (max-width: 1326px) {
+      width: 400px !important;
+      right: 0;
+    }
+
+    @media screen and (max-width: 1290px) {
+      width: 400px !important;
+      right: -30px;
+      top: -20px;
+    }
+
+    @media screen and (max-width: 1290px) {
+      width: 300px !important;
+      top: 20px;
+      right: -90px;
+    }
   }
 
   &_content {
@@ -69,6 +118,41 @@
         min-width: 400px;
       }
     }
+
+    @media screen and (max-width: 1023px) {
+      padding: 0;
+
+      & > h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+        font-weight: 200;
+      }
+
+      & > h2 {
+        font-size: 24px;
+      }
+
+      .foundation-name_wrapper {
+        margin: 0 0 60px;
+
+        .paint {
+          width: 250px;
+          min-width: 250px;
+          top: 40px;
+          left: calc(50% - 125px);
+        }
+
+        & > h1 {
+          font-size: 48px !important;
+        }
+      }
+
+      & > p {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'e-Ukraine';
+      }
+    }
   }
 
   &_buttons {
@@ -80,10 +164,15 @@
     .main_btn {
       width: 100%;
       font-size: 18px;
+      max-width: 720px;
 
       &__secondary {
         background: #fff;
       }
+    }
+
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 60px;
     }
   }
 
@@ -92,7 +181,11 @@
     font-size: 40px;
     font-weight: 200;
     text-align: center;
-    font-family: 'e-UkraineHead'
+    font-family: 'e-UkraineHead';
+
+    @media screen and (max-width: 1326px) {
+      font-size: 32px;
+    }
   }
 }
 

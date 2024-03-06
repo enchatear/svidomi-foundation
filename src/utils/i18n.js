@@ -16,27 +16,26 @@ const logosMap = {
 const getInactiveLang = (currentLang) => currentLang === 'ua' ? 'en' : 'ua';
 
 const changeLogo = async (lang) => {
-  const headerSvgContainer = document.getElementById('headerLogoSvg');
-  const footerSvgContainer = document.getElementById('footerLogoSvg');
+    const headerSvgContainer = document.getElementById('headerLogoSvg');
+    const footerSvgContainer = document.getElementById('footerLogoSvg');
 
-  const headerSvgUrl = logosMap[`header_${lang}`];
-  const footerSvgUrl = logosMap[`footer_${lang}`];
+    const headerSvgUrl = logosMap[`header_${lang}`];
+    const footerSvgUrl = logosMap[`footer_${lang}`];
 
-  const headerSvgResponse = await fetch(headerSvgUrl);
-  const headerSvg = await headerSvgResponse.text();
+    const headerSvgResponse = await fetch(headerSvgUrl);
+    const headerSvg = await headerSvgResponse.text();
 
-  const footerSvgResponse = await fetch(footerSvgUrl);
-  const footerSvg = await footerSvgResponse.text();
+    const footerSvgResponse = await fetch(footerSvgUrl);
+    const footerSvg = await footerSvgResponse.text();
 
-  const svgTagRegex = /<svg.*?>/i;
+    const svgTagRegex = /<svg.*?>/i;
 
-  if (svgTagRegex.test(headerSvg)) {
-    headerSvgContainer.innerHTML = headerSvg;
-  }
-  if (svgTagRegex.test(footerSvg)) {
-    footerSvgContainer.innerHTML = footerSvg;
-  }
-
+    if (svgTagRegex.test(headerSvg) && window.innerWidth > 624) {
+      headerSvgContainer.innerHTML = headerSvg;
+    }
+    if (svgTagRegex.test(footerSvg)) {
+      footerSvgContainer.innerHTML = footerSvg;
+    }
 }
 
 const changeLanguageOnPage = (t) => {

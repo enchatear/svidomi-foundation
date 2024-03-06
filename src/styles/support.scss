@@ -158,4 +158,73 @@
       width: 100%;
     }
   }
+
+  .request-img-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    & > img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 0;
+    margin-top: 100px;
+
+    .awards_wrapper {
+      flex-direction: column;
+
+      .awards_card {
+        padding: 40px 32px;
+
+        & > h3 {
+          font-size: 24px;
+        }
+
+        &__blue {
+          padding: 0;
+
+          .awards_swiper-container {
+            padding: 44px;
+          }
+
+          .swiper-slide > img {
+            height: initial;
+          }
+        }
+      }
+    }
+
+    .request_card {
+      padding: 50px 16px;
+      grid-template-columns: 1fr;
+      background-image: url('/assets/img/stand-with-ukraine-dark.png');
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 1025px;
+
+      .request-img-wrapper {
+        display: none;
+      }
+
+      .request_form {
+        gap: 24px;
+        & > h3 {
+          font-size: 36px;
+          //margin-bottom: 16px;
+        }
+      }
+    }
+
+    .support_card {
+      padding: 125px 16px;
+      margin-bottom: 100px;
+
+      &_content > h3 {
+        font-size: 24px;
+      }
+    }
+  }
 }

@@ -55,4 +55,26 @@
       text-align: center;
     }
   }
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 100px;
+    padding: 16px;
+    &_container {
+      & > h3 {
+        font-size: 24px;
+      }
+    }
+
+    &_cards_wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    &_card {
+      padding: 200px 16px 18px;
+      
+      & > p {
+        text-align: left;
+      }
+    }
+  }
 }

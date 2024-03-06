@@ -40,4 +40,30 @@
       width: 24px;
     }
   }
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 100px;
+    padding: 40px 16px 46px;
+
+     & > h3 {
+       font-size: 24px;
+     }
+
+    &_wrapper {
+      gap: 40px;
+    }
+
+    &_item {
+      width: 60px;
+      height: 60px;
+
+      .instagram {
+        width: 30px;
+      }
+
+      .facebook {
+        width: 18px;
+      }
+    }
+  }
 }

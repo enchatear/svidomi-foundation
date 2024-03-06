@@ -21,7 +21,7 @@ const socialSwiper = new Swiper('.social_swiper-container', {
 const awardsSwiper = new Swiper('.awards_swiper-container', {
   slidesPerView: 1,
   // loop: true,
-  // spaceBetween: 0,
+  spaceBetween: 44,
   // autoplay: {
   //   delay: 5000,
   //   disableOnInteraction: false,

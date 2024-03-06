@@ -2,7 +2,7 @@
 
 .footer {
   background: linear-gradient(98.27deg, #B0D4FF 0%, #5B9CD8 100%);
-  padding: 54px 0 20px;
+  padding: 54px 24px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,5 +124,31 @@
     color: #fff;
     font-weight: 100;
     font-size: 12px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 40px 16px 136px;
+
+    &_panel {
+      flex-direction: column;
+      max-height: fit-content;
+
+      &__block {
+        margin-bottom: 32px;
+        align-items: center;
+      }
+    }
+
+    &_logo {
+      margin-bottom: 32px;
+    }
+
+    &_address {
+      margin-bottom: 0;
+    }
+
+    hr {
+      margin: 32px 0;
+    }
   }
 }
