@@ -21,6 +21,7 @@
   border: 1px solid transparent;
   font-size: 18px;
   font-weight: 400;
+  color: #000;
 
 
   &:hover {
@@ -35,6 +36,7 @@
   &__secondary {
     background: #fff;
     border: 2px solid #000;
+    color: #000;
 
     &:hover {
       background: #FEF0C9;
@@ -134,6 +136,11 @@
   bottom: 195px;
   transition: right 300ms ease-out;
   cursor: pointer;
+  transition: 200ms;
+
+  &:hover {
+    background: $c-Accent-2;
+  }
 
   &_active {
     right: 94px;

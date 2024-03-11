@@ -143,7 +143,13 @@
         }
 
         & > h1 {
-          font-size: 48px !important;
+          white-space: nowrap;
+          font-size: 12vw;
+          overflow: hidden;
+
+          @media screen and (min-width: 500px) {
+            font-size: 48px;
+          }
         }
       }
 
