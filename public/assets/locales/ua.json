@@ -1,6 +1,5 @@
 {
   "logoText": "БЛАГОДІЙНИЙ ФОНД \n СВІДОМІ",
-  "phone": "+38 (063) 836 43 44",
   "charityOrganization": "Благодійна організація",
   "charityFoundation": "БЛАГОДІЙНИЙ ФОНД",
   "svidomi": "\"СВІДОМІ\"",
@@ -16,7 +15,7 @@
   "donationTip": "Підтримай у зручний спосіб",
   "monobank": "Монобанк",
   "privat": "Приватбанк",
-  "liqpay": "LIQPAY",
+  "liqpay": "SWIFT",
   "donationCardPolicy": "Підтверджуючи транзакцію, ви приймаєте умови політики конфіденційності та публічної оферти.",
   "donationCardWarning": "УВАГА: Всі платежі буде конвертовано в українську гривню (UAH).",
   "information_title": "ДОПОМАГАЄМО ЗСУ ОТРИМАТИ ТЕХНОЛОГІЧНУ ПЕРЕВАГУ",
@@ -45,7 +44,6 @@
   "supportFrontStopEnemy": "Підтримай фронт - зупини ворога!",
   "forZSURequests": "Для запитів від ЗСУ",
   "forAllRequests": "Для загальних запитів",
-  "email": "bfsvidomi@gmail.com",
   "allRightReserved": "Благодійний фонд \"Свідомі\" 2024. Всі права захищено",
   "socialHead": "МИ В СОЦМЕРЕЖАХ",
   "ourAwards": "Наші відзнаки",

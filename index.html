@@ -1,34 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!--    todo     -->
+    <!-- todo -->
     <meta name="robots" content="noindex, nofollow">
 
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <title>Свідомі Благодійний Фонд</title>
+
     <link
             rel="stylesheet"
             type="text/css"
             href="/assets/css/main.css"
     />
+
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-KTNVKXYVJW">
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-KTNVKXYVJW');
+    </script>
 </head>
-<script async
-        src="https://www.googletagmanager.com/gtag/js?id=G-KTNVKXYVJW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-
-  gtag('js', new Date());
-
-  gtag('config', 'G-KTNVKXYVJW');
-</script>
 <body>
+
 <div id="content" class="content">
+
     <header class="header">
         <div class="container header_container">
             <div class="header_logo" id="headerLogoSvg"></div>
@@ -44,13 +52,14 @@
                 </div>
                 <a href="tel:+380638364344" class="phone">
                     <div class="phone-icon_wrapper">
-                        <img src="/assets/icons/phone.svg" alt="phone" />
+                        <img src="/assets/icons/phone.svg" alt="phone"/>
                     </div>
-                    <span data-i18n="phone"/>
+                    <span>+380638364344</span>
                 </a>
             </div>
         </div>
     </header>
+
     <section class="main">
         <img src="./assets/img/red-drone.png" alt="red-drone"
              class="red-drone"/>
@@ -77,6 +86,7 @@
         <img src="./assets/img/grey-drone.png" alt="grey-drone"
              class="grey-drone"/>
     </section>
+
     <section id="donation" class="donation">
         <div class="container donation_container">
             <!--            <div class="card collection-card animationOnScroll">-->
@@ -113,41 +123,309 @@
                 </div>
                 <div class="donation_panel">
                     <div class="donation_variants">
-                        <button class="svidomi_btn donation_btn"
-                                data-i18n="monobank"></button>
+
                         <button
-                                class="svidomi_btn svidomi_btn__secondary donation_btn"
+                                data-tab="monobank"
+                                class="svidomi_btn svidomi_btn__other donation_btn active"
+                                data-i18n="monobank">
+                        </button>
+
+                        <button
+                                data-tab="privat"
+                                class="svidomi_btn svidomi_btn__other donation_btn"
                                 data-i18n="privat">
                         </button>
-                        <button class="svidomi_btn svidomi_btn__secondary donation_btn"
+
+                        <button
+                                data-tab="swift"
+                                class="svidomi_btn svidomi_btn__other donation_btn"
                                 data-i18n="liqpay"></button>
                     </div>
+
                     <div class="card donation_card">
                         <img src="./assets/img/blue-circles.png"
                              class="blue-circle_right_top blue-circle_right_top_sm"
                              alt="blue-circles"/>
-                        <div class="donation_card_title">
-                            <button class="svidomi_btn donation_card_btn"
-                                    data-i18n="otherBankDonation"></button>
-                            <div class="donation_pay-services">
-                                <img src="./assets/img/apple-pay.png"
-                                     alt="apple pay" class="pay-img"/>
-                                <img src="./assets/img/google-pay.png"
-                                     alt="apple pay" class="pay-img"/>
-                                <img src="./assets/img/card-pay.png"
-                                     alt="apple pay"
-                                     class="pay-img"/>
+
+                        <div data-tab="monobank"
+                             class="card__content card__content_mono active">
+
+                            <!--                            <div class="donation_card_title">-->
+                            <!--                                <button class="svidomi_btn donation_card_btn"-->
+                            <!--                                        data-i18n="otherBankDonation"></button>-->
+                            <!--                                <div class="donation_pay-services">-->
+                            <!--                                    <img src="./assets/img/apple-pay.png"-->
+                            <!--                                         alt="apple pay" class="pay-img"/>-->
+                            <!--                                    <img src="./assets/img/google-pay.png"-->
+                            <!--                                         alt="apple pay" class="pay-img"/>-->
+                            <!--                                    <img src="./assets/img/card-pay.png"-->
+                            <!--                                         alt="apple pay"-->
+                            <!--                                         class="pay-img"/>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+
+                            <!--                            <p class="donation_card_policy"-->
+                            <!--                               data-i18n="donationCardPolicy"></p>-->
+
+                            <!--                            <p class="donation_card_warning"-->
+                            <!--                               data-i18n="donationCardWarning"></p>-->
+
+                            <h4 class="card__title">
+                                Банка від MonoBank
+                            </h4>
+
+                            <p class="card__description card__description_mb">
+                                Шановні донори! Ми вдячні за вашу підтримку благодійного фонду. Ваші пожертви
+                                допомагають нам здійснювати важливі проекти та допомагати тим, хто потребує. Прохання
+                                підтримати нашу ініціативу ще раз - ваша допомога важлива. Дякуємо за довіру та велику
+                                доброту.
+                            </p>
+
+                            <a href="https://send.monobank.ua/jar/4nugeTfmCX" class="card__link">Посилання на банку</a>
+
+                            <p class="card__text">
+                                Для зручності ви можете відскануівати QR код та перейти на сайт MonoBank для поповнення
+                                банки.
+                            </p>
+
+                            <div class="card__qr-code">
+
+                                <span class="card__decor">
+                                    <img src="public/assets/img/cat-counter.png" alt=""/>
+                                </span>
+
+                                <img src="public/assets/img/qrcode.png" alt=""/>
+
                             </div>
+
                         </div>
-                        <p class="donation_card_policy"
-                           data-i18n="donationCardPolicy"></p>
-                        <p class="donation_card_warning"
-                           data-i18n="donationCardWarning"></p>
+
+                        <div data-tab="privat"
+                             class="card__content">
+
+                            <h4 class="card__title">
+                                АТ КБ "ПРИВАТБАНК"
+                            </h4>
+
+                            <ul class="card__list">
+                                <li>
+                                    <div class="card__right">
+                                        <p class="card__subtitle">
+                                            IBAN
+                                        </p>
+
+                                        <p class="card__description">
+                                            UA803052990000026008036004310
+                                            <span class="copyButton card__copy"
+                                                  data-copy-text="UA803052990000026008036004310"></span>
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="card__right">
+                                        <p class="card__subtitle">
+                                            КОД ОТРИМУВАЧА:
+                                        </p>
+
+                                        <p class="card__description">
+                                            4490479
+                                            <span class="copyButton card__copy"
+                                                  data-copy-text="4490479"></span>
+                                        </p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div data-tab="swift"
+                             class="card__content">
+
+                            <div>
+                                <h4 class="card__title">
+                                    SWIFT-ПЕРЕКАЗИ
+                                </h4>
+
+                                <ul class="card__list">
+                                    <li>
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                Назва підприємства BENEFECIARY:
+                                            </p>
+
+                                            <p class="card__description">
+                                                CHARITABLE ORGANIZATION “ CHARITY FOUNDATION “ CONSCIOUS”
+                                                / CO “ CF “CONSCIOUS”
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="CHARITABLE ORGANIZATION “ CHARITY / CO “ CF “CONSCIOUS”"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                COMPANY ADRESS:
+                                            </p>
+
+                                            <p class="card__description">
+                                                288 L. UKRAINKY STR., POLONNE, SHEPETIVKA DISTRICT, KHMELNYTSKYI REGION,
+                                                UKRAINE, 30501
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="288 L. UKRAINKY STR., POLONNE, SHEPETIVKA DISTRICT, KHMELNYTSKYI REGION, UKRAINE, 30501"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                NAME OF THE BANK:
+                                            </p>
+
+                                            <p class="card__description">
+                                                SC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="SC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                BANK SWIFT CODE:
+                                            </p>
+
+                                            <p class="card__description">
+                                                PBANUA2X
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="PBANUA2X"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__left">
+                                            <img src="src/assets/icons/euro.svg" alt=""/>
+                                        </div>
+
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                EURO (EUR):
+                                            </p>
+
+                                            <p class="card__description">
+                                                UA693052990000026006036009135
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="UA693052990000026006036009135"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__left">
+                                            <img src="src/assets/icons/usd.svg" alt=""/>
+                                        </div>
+
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                US DOLLAR (USD):
+                                            </p>
+
+                                            <p class="card__description">
+                                                UA513052990000026005016007802
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="UA513052990000026005016007802"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__left">
+                                            <img src="src/assets/icons/zl.svg" alt=""/>
+                                        </div>
+
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                Polish Zloty (PLN):
+                                            </p>
+
+                                            <p class="card__description">
+                                                UA913052990000026007006017178
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="UA913052990000026007006017178"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__left">
+                                            <img src="src/assets/icons/nkr.svg" alt=""/>
+                                        </div>
+
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                Norwegian krone (NOK):
+                                            </p>
+
+                                            <p class="card__description">
+                                                UA663052990000026001046012872
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="UA663052990000026001046012872"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__left">
+                                            <img src="src/assets/icons/kc.svg" alt=""/>
+                                        </div>
+
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                Czech krone (CZK):
+                                            </p>
+
+                                            <p class="card__description">
+                                                UA293052990000026000036012775
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="UA293052990000026000036012775"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="card__left">
+                                            <img src="src/assets/icons/gbp.svg" alt=""/>
+                                        </div>
+
+                                        <div class="card__right">
+                                            <p class="card__subtitle">
+                                                Pound Sterling (GBP):
+                                            </p>
+
+                                            <p class="card__description">
+                                                UA153052990000026008016011549
+                                                <span class="copyButton card__copy"
+                                                      data-copy-text="UA153052990000026008016011549"></span>
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="information animationOnScroll">
         <div class="information_content animationOnScroll">
             <h3 data-i18n="information_title"></h3>
@@ -205,6 +483,7 @@
         <img src="./assets/img/starlink.png" alt="starlink"
              class="starlink-img"/>
     </section>
+
     <section class="about">
         <div class="about_container">
             <h3 data-i18n="aboutWhyTitle" class="animationOnScroll"></h3>
@@ -244,50 +523,58 @@
             </div>
         </div>
     </section>
+
     <section class="social">
         <h3 data-i18n="socialHead" class="animationOnScroll"></h3>
         <div class="social_swiper-container animationOnScroll">
             <div class="swiper-wrapper">
+
                 <div class="swiper-slide">
-                    <img src="./assets/img/social/social-01.png" alt="Image 1">
+                    <a href="https://www.instagram.com/p/Cu1F07-tU_D/"
+                       target="_blank"
+                       class="social__item">
+                        <img src="./assets/img/social/1.jfif" alt="Image 1">
+                    </a>
                 </div>
+
                 <div class="swiper-slide">
-                    <img src="./assets/img/social/social-02.png" alt="Image 2">
+                    <a href="https://www.instagram.com/p/C0ormyvNWTz/"
+                       target="_blank"
+                       class="social__item">
+                        <img src="./assets/img/social/2.jpg" alt="Image 2">
+                    </a>
                 </div>
+
                 <div class="swiper-slide">
-                    <img src="./assets/img/social/social-03.png" alt="Image 3">
+                    <a href="https://www.instagram.com/p/C0hKCzztuao/"
+                       target="_blank"
+                       class="social__item">
+                        <img src="./assets/img/social/3.jpg" alt="Image 3">
+                    </a>
                 </div>
+
                 <div class="swiper-slide">
-                    <img src="./assets/img/social/social-03.png" alt="Image 1">
+                    <a href="https://www.instagram.com/p/CyYuTcNtpGX/"
+                       target="_blank"
+                       class="social__item">
+                        <img src="./assets/img/social/5.jfif" alt="Image 5">
+                    </a>
                 </div>
-                <div class="swiper-slide">
-                    <img src="./assets/img/social/social-03.png" alt="Image 2">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/img/social/social-02.png" alt="Image 3">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/img/social/social-01.png" alt="Image 1">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/img/social/social-01.png" alt="Image 2">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/img/social/social-02.png" alt="Image 3">
-                </div>
+
             </div>
         </div>
         <div class="social_wrapper">
-            <a href="https://instagram.com" target="_blank" class="social_item">
+            <a href="https://www.instagram.com/svidomiua/" target="_blank" class="social_item">
                 <img class="instagram" src="./assets/icons/instagram.svg"
                      alt="instagram"/>
             </a>
-            <a href="https://facebook.com" target="_blank" class="social_item">
+            <a href="https://www.facebook.com/groups/svidomi/" target="_blank" class="social_item">
                 <img class="facebook" src="./assets/icons/facebook.svg"
                      alt="facebook"/>
             </a>
         </div>
     </section>
+
     <section class="support">
         <div class="container">
             <div class="awards_wrapper animationOnScroll">
@@ -303,43 +590,73 @@
                     <div class="swiper awards_swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-1.png"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-1.jpg"
+                                     src="./assets/img/awards/award-1.jpg"
+                                     loading="lazy"
                                      alt="Image 1">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-2.png"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-2.jpg"
+                                     src="./assets/img/awards/award-2.jpg"
+                                     loading="lazy"
                                      alt="Image 2">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-3.png"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-3.jpg"
+                                     src="./assets/img/awards/award-3.jpg"
+                                     loading="lazy"
                                      alt="Image 3">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-4.png"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-4.jpg"
+                                     src="./assets/img/awards/award-4.jpg"
+                                     loading="lazy"
                                      alt="Image 1">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-5.png"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-5.jpg"
+                                     src="./assets/img/awards/award-5.jpg"
+                                     loading="lazy"
                                      alt="Image 2">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-6.png"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-6.jpg"
+                                     src="./assets/img/awards/award-6.jpg"
+                                     loading="lazy"
                                      alt="Image 3">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-7.png"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-7.jpg"
+                                     src="./assets/img/awards/award-7.jpg"
+                                     loading="lazy"
                                      alt="Image 1">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-8.png"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-8.jpg"
+                                     src="./assets/img/awards/award-8.jpg"
+                                     loading="lazy"
                                      alt="Image 2">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-9.jpg"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-9.jpg"
+                                     src="./assets/img/awards/award-9.jpg"
+                                     loading="lazy"
                                      alt="Image 3">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./assets/img/awards/award-10.PNG"
+                                <img data-fancybox="gallery"
+                                     href="./assets/img/awards/award-10.jpg"
+                                     src="./assets/img/awards/award-10.jpg"
+                                     loading="lazy"
                                      alt="Image 3">
                             </div>
                         </div>
@@ -396,6 +713,7 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer_panel">
@@ -409,14 +727,14 @@
                        data-i18n="documents"></a>
                 </div>
                 <div class="footer_panel__block">
-                    <a href="#" class="footer_link" data-i18n="email"></a>
+                    <a href="mailto:bfsvidomi@gmail.com" class="footer_link">bfsvidomi@gmail.com</a>
                     <div class="footer_social_buttons">
-                        <a href="https://instagram.com" target="_blank"
+                        <a href="https://www.instagram.com/svidomiua/" target="_blank"
                            class="social_btn">
                             <img src="./assets/icons/instagram.svg"
                                  alt="instagram"/>
                         </a>
-                        <a href="https://facebook.com" target="_blank"
+                        <a href="https://www.facebook.com/groups/svidomi/" target="_blank"
                            class="social_btn">
                             <img src="./assets/icons/facebook.svg"
                                  alt="facebook"/>
@@ -434,10 +752,14 @@
             <span data-i18n="allRightReserved" class="rights"></span>
         </div>
     </footer>
+
     <div id="scrollToTop" class="scroll-btn">
         <img src="./assets/icons/arrow-up.svg" alt="arrow"/>
     </div>
+
     <script type="module" src="/src/index.js"></script>
+
 </div>
+
 </body>
 </html>

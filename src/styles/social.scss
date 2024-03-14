@@ -32,12 +32,47 @@
     justify-content: center;
     border-radius: 100%;
 
+    transition: .3s;
+
+    &:hover {
+      background: $c-Accent-2;
+    }
+
     .instagram {
       width: 40px;
     }
 
     .facebook {
       width: 24px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      opacity: 0;
+      background: rgba(255, 255, 255, 0.5) url('../assets/icons/instagram.svg') no-repeat center;
+      background-size: 10%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: .4s ease;
+
+      border-radius: 15px;
+    }
+
+    &:hover {
+      &::after {
+        opacity: .9;
+      }
     }
   }
 
@@ -63,6 +98,13 @@
 
       .facebook {
         width: 18px;
+      }
+    }
+
+    &__item {
+      border-radius: 15px;
+      &::after {
+        border-radius: 15px;
       }
     }
   }

@@ -13,6 +13,7 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.35",
     "gsap": "^3.12.5",
     "i18next": "^23.8.2",
     "i18next-browser-languagedetector": "^7.2.0",

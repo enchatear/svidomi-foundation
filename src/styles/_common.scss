@@ -9,10 +9,10 @@
       padding: 0;
   }
 }
+
 .svidomi_btn  {
   border-radius: 10px;
   padding: 24px;
-  background: $c-Accent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
   font-size: 18px;
   font-weight: 400;
   color: #000;
-
+  background: $c-Accent;
 
   &:hover {
     background: $c-Accent-2
@@ -44,6 +44,23 @@
 
     &:active {
       background: #FEF0C9;
+      border-color: $c-Accent;
+    }
+  }
+
+  &__other {
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+
+    &.active,
+    &:hover {
+      background: $c-Accent-2;
+      border-color: $c-Accent-2;
+    }
+
+    &:active {
+      background: $c-Accent-3;
       border-color: $c-Accent;
     }
   }
@@ -111,6 +128,13 @@
   top: -110px;
   right: -110px;
   transform: rotate(180deg) scale(0.5);
+
+  @media screen and (max-width: 767px) {
+    width: 220px;
+
+    top: -48px;
+    right: -66px;
+  }
 }
 
 .smooth_scroll {

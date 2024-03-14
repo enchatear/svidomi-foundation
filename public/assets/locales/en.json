@@ -1,6 +1,5 @@
 {
   "logoText": "CHARITY FOUNDATION \n CONSCIOUS",
-  "phone": "+38 (063) 836 43 44",
   "charityOrganization": "Charitable organization",
   "charityFoundation": "CHARITY FOUNDATION",
   "svidomi": "\"CONSCIOUS\"",
@@ -16,7 +15,7 @@
   "donationTip": "Support in a convenient way",
   "monobank": "Monobank",
   "privat": "Privatbank",
-  "liqpay": "LIQPAY",
+  "liqpay": "SWIFT",
   "donationCardPolicy": "By confirming the transaction, you accept the terms of the privacy policy and public offer.",
   "donationCardWarning": "Please notice that all payments will be converted to Ukrainian hryvnia (UAH).",
   "information_title": "HELPING THE RAILWAYS TO GAIN A TECHNOLOGICAL ADVANTAGE",
@@ -45,7 +44,6 @@
   "supportFrontStopEnemy": "Support the front - stop the enemy!",
   "forZSURequests": "For requests from ZSU",
   "forAllRequests": "For general requests",
-  "email": "bfsvidomi@gmail.com",
   "allRightReserved": "Charity Foundation “Conscious” 2024. All rights reserved",
   "socialHead": "FOUNDATION OFFICIAL PAGES IN SOCIAL MEDIA",
   "ourAwards": "Our Honors",

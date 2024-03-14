@@ -96,6 +96,12 @@
       justify-content: center;
       align-items: center;
       background: $c-Accent;
+
+      transition: .3s;
+
+      &:hover {
+        background: $c-Accent-2;
+      }
     }
   }
 

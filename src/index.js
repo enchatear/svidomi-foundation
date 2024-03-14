@@ -16,3 +16,8 @@ import './scripts/swiper.js';
 import './scripts/animationOnScroll.js';
 import './scripts/adaptive.js';
 import './utils/i18n.js';
+import './scripts/main.js';
+
+import { Fancybox } from '@fancyapps/ui';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
+Fancybox.bind('[data-fancybox="gallery"]', {});
