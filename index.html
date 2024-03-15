@@ -191,10 +191,10 @@
                             <div class="card__qr-code">
 
                                 <span class="card__decor">
-                                    <img src="public/assets/img/cat-counter.png" alt=""/>
+                                    <img src="/assets/img/cat-counter.png" alt=""/>
                                 </span>
 
-                                <img src="public/assets/img/qrcode.png" alt=""/>
+                                <img src="/assets/img/qrcode.png" alt=""/>
 
                             </div>
 
@@ -672,16 +672,16 @@
                 </div>
             </div>
             <div class="request_card animationOnScroll">
-                <form class="request_form">
+                <form id="request_form" class="request_form">
                     <h3 data-i18n="requestForHelp"></h3>
                     <p data-i18n="fillForm"></p>
-                    <input type="text" class="request_input"
+                    <input name="fullName" type="text" class="request_input"
                            data-i18n_placeholder="enterPIB" required/>
-                    <input type="email" class="request_input"
+                    <input name="email" type="email" class="request_input"
                            data-i18n_placeholder="enterEmail" required/>
-                    <input type="tel" class="request_input"
+                    <input name="phone" type="tel" class="request_input"
                            data-i18n_placeholder="enterTel" required/>
-                    <textarea class="request_textarea"
+                    <textarea name="needs" class="request_textarea"
                               data-i18n_placeholder="describeYourNeeds"></textarea>
                     <p class="request_agreement"
                        data-i18n="personalDataAgreement"></p>

@@ -38,3 +38,37 @@ copyButtons.forEach(copyButton => {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const URL = 'https://europe-west6-svidomi.cloudfunctions.net/api/sendToTelegram';
+
+    const form = document.getElementById("request_form");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const formValues = {};
+
+
+        formData.forEach(function(value, key) {
+            formValues[key] = value;
+        });
+
+        fetch(URL, {
+            method: 'POST',
+            body: JSON.stringify(formValues),
+        })
+            .then(data => {
+                alert('Успішно відправлено');
+                console.log('Успішно відправлено', data);
+                // todo додати тостер з повідомленням про успішне відправлення
+            })
+            .catch(error => {
+                alert('Помилка відправлення');
+                console.error('Помилка:', error);
+                // todo додати тостер з повідомленням про помилку відправлення
+            });
+    });
+});
