@@ -178,23 +178,13 @@
                             <!--                            <p class="donation_card_warning"-->
                             <!--                               data-i18n="donationCardWarning"></p>-->
 
-                            <h4 class="card__title">
-                                Банка від MonoBank
-                            </h4>
+                            <h4 class="card__title" data-i18n="monoTitle"></h4>
 
-                            <p class="card__description card__description_mb">
-                                Шановні донори! Ми вдячні за вашу підтримку благодійного фонду. Ваші пожертви
-                                допомагають нам здійснювати важливі проекти та допомагати тим, хто потребує. Прохання
-                                підтримати нашу ініціативу ще раз - ваша допомога важлива. Дякуємо за довіру та велику
-                                доброту.
-                            </p>
+                            <p class="card__description card__description_mb" data-i18n="monoDescription"></p>
 
-                            <a href="https://send.monobank.ua/jar/4nugeTfmCX" class="card__link">Посилання на банку</a>
+                            <a href="https://send.monobank.ua/jar/4nugeTfmCX" target="_blank" class="card__link"  data-i18n="monoLinkTitle"></a>
 
-                            <p class="card__text">
-                                Для зручності ви можете відскануівати QR код та перейти на сайт MonoBank для поповнення
-                                банки.
-                            </p>
+                            <p class="card__text" data-i18n="monoLinkDescription"></p>
 
                             <div class="card__qr-code">
 
@@ -202,7 +192,11 @@
                                     <img src="/assets/img/cat-counter.png" alt=""/>
                                 </span>
 
-                                <img src="/assets/img/qrcode.png" alt=""/>
+                                <a href="https://send.monobank.ua/jar/4nugeTfmCX" target="_blank">
+                                    <img src="/assets/img/qrcode.png" alt=""/>
+                                </a>
+
+
 
                             </div>
 
@@ -211,9 +205,7 @@
                         <div data-tab="privat"
                              class="card__content">
 
-                            <h4 class="card__title">
-                                АТ КБ "ПРИВАТБАНК"
-                            </h4>
+                            <h4 class="card__title" data-i18n="privatbank_title"></h4>
 
                             <ul class="card__list">
                                 <li>
@@ -232,9 +224,7 @@
 
                                 <li>
                                     <div class="card__right">
-                                        <p class="card__subtitle">
-                                            КОД ОТРИМУВАЧА:
-                                        </p>
+                                        <p class="card__subtitle"  data-i18n="recieverCode"></p>
 
                                         <p class="card__description">
                                             4490479
@@ -260,7 +250,7 @@
                                     <li>
                                         <div class="card__right">
                                             <p class="card__subtitle">
-                                                Назва підприємства BENEFECIARY:
+                                                BENEFECIARY:
                                             </p>
 
                                             <p class="card__description">
@@ -275,7 +265,7 @@
                                     <li>
                                         <div class="card__right">
                                             <p class="card__subtitle">
-                                                COMPANY ADRESS:
+                                                COMPANY ADDRESS:
                                             </p>
 
                                             <p class="card__description">
@@ -733,6 +723,14 @@
                     <a href="https://drive.google.com/drive/folders/1GHqPUZw87vFKOkm7b0PlhMrzVlxcLGVb"
                        target="_blank" class="footer_link"
                        data-i18n="documents"></a>
+
+                    <a href="privacy.html"
+                       target="_blank" class="footer_link"
+                       data-i18n="privacy"></a>
+
+                    <a href="public-oferta.html"
+                       target="_blank" class="footer_link"
+                       data-i18n="oferta"></a>
                 </div>
                 <div class="footer_panel__block">
                     <a href="mailto:bfsvidomi@gmail.com" class="footer_link">bfsvidomi@gmail.com</a>
@@ -767,6 +765,28 @@
 
     <script type="module" src="/src/index.js"></script>
 
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal__row">
+        <div class="modal__col">
+            <p class="modal__text" data-i18n="privacy_modal_text">
+
+            </p>
+        </div>
+
+        <div class="modal__col">
+            <button id="acceptBtn" class="svidomi_btn modal__button" data-i18n="privacy_modal_approve"></button>
+        </div>
+
+        <div class="modal__col">
+            <button id="declineBtn" class="svidomi_btn svidomi_btn__other modal__button modal__button_cancel" data-i18n="privacy_modal_deny"></button>
+        </div>
+
+        <div class="modal__col">
+            <button id="moreInfo" class="svidomi_btn svidomi_btn__other modal__button modal__button_cancel modal__button_cancel_info" data-i18n="privacy_modal_policy_link"></button>
+        </div>
+    </div>
 </div>
 
 </body>

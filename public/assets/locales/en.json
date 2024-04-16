@@ -62,5 +62,17 @@
   "countryAndPostIndex": "Ukraine, 30501, Khmelnytskyi region,",
   "region": "Shepetivka district,",
   "town": "Polonne,",
-  "street": "L.Ukrainky str., 101"
+  "street": "L.Ukrainky str., 101",
+  "monoTitle": "Monobank",
+  "monoDescription": "Dear benefactors! We are grateful for your support of the charity foundation. Your donations help us carry out important projects and help those in need. Please support our initiative once again - your help is important. Thank you for your trust and great kindness.",
+  "monoLinkTitle": "Link to the bank",
+  "monoLinkDescription": "For convenience, you can scan the QR code and go to the Monobank website to top up the bank.",
+  "privacy": "Privacy Policy",
+  "oferta": "Public offer",
+  "privacy_modal_text": "We use cookies to enhance your experience on our site.",
+  "privacy_modal_policy_link": "Privacy Policy",
+  "privacy_modal_deny": "No, thank you",
+  "privacy_modal_approve": "Okay",
+  "privatbank_title": "JSC CB PRIVATBANK",
+  "recieverCode": "Recipient Code:"
 }
